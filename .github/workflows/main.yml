@@ -1,5 +1,5 @@
 on: 
-  release: created
+  create
 jobs:
   build:
     name: Generate Exam
