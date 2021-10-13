@@ -6,8 +6,10 @@ Created on Wed Oct 13 14:08:08 2021
 """
 
 import numpy as np
+import sys
 
-# np.random.seed(0)
+my_seed = int(sys.argv[1])
+np.random.seed(my_seed)
 
 f = open("Dumb_Template.ipynb", 'r')
 
