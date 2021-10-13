@@ -1,5 +1,4 @@
-on:
-    release: push
+on: push
 jobs:
   build:
     name: Generate Exam
