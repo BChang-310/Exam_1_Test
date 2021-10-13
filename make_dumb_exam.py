@@ -8,8 +8,13 @@ Created on Wed Oct 13 14:08:08 2021
 import numpy as np
 import sys
 
-my_seed = int(sys.argv[1])
-np.random.seed(my_seed)
+
+def to_ascii(a_string):
+    
+    return np.sum([ord(c) for c in a_string])
+  
+my_username_seed = to_ascii(sys.argv[1])
+np.random.seed(my_username_seed)
 
 f = open("Dumb_Template.ipynb", 'r')
 
